@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "nrwl.angular-console",
+    "esbenp.prettier-vscode",
+    "firsttris.vscode-jest-runner",
+    "dbaeumer.vscode-eslint",
+    "sudoaugustin.tailwindcss-transpiler",
+    "bourhaouta.tailwindshades",
+    "austenc.tailwind-docs",
+    "bradlc.vscode-tailwindcss"
+  ]
+}
