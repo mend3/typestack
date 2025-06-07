@@ -1,10 +1,18 @@
 import { Story, Meta } from '@storybook/react'
-import Button, { ButtonProps, styles } from './Button'
+import Button, { ButtonProps } from './Button'
+
+const styles = {
+  primary: 'border-indigo-500 bg-indigo-500 hover:bg-indigo-600',
+  success: 'border-green-500 bg-green-500 hover:bg-green-600',
+  error: 'border-red-500 bg-red-500 hover:bg-red-600',
+  warning: 'border-yellow-500 bg-yellow-500 hover:bg-yellow-600',
+  info: 'border-teal-500 bg-teal-500 hover:bg-teal-600',
+} as const
 
 export default {
   component: Button,
   title: 'Button',
-} as Meta<ButtonProps & { level: keyof typeof Button }>
+} as Meta<ButtonProps>
 
 const Template: Story<ButtonProps> = args => <Button {...args} />
 export const Primary = Template.bind({})

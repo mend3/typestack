@@ -1,8 +1,6 @@
-import './app.module.scss'
-
 import { Link, Route, Routes } from 'react-router-dom'
 
-import { Button, Container, Storybook } from '@typestack/storybook'
+import { Button, Container } from '@typestack/storybook'
 
 export function App() {
   return (
@@ -61,7 +59,7 @@ export function App() {
               </div>
             }
           />
-          <Route path='/storybook' element={<Storybook />} />
+          <Route path='/storybook' element={<Container />} />
           <Route
             path='/buttons'
             element={

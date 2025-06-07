@@ -1,10 +1,7 @@
 import { PropsWithChildren } from 'react'
-import './index.module.scss'
 
 /* eslint-disable-next-line */
-export interface ContainerProps {
-  title?: string
-}
+export interface ContainerProps {}
 
 export function Container(props: PropsWithChildren<ContainerProps>) {
   return (
